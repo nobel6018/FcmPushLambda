@@ -11,7 +11,7 @@ from firebase_admin import messaging
 
 # https://cloud.google.com/functions/docs/calling/pubsub
 def entrypoint(event: dict, context) -> str:
-    FIREBASE_ACCOUNT_SERVICE = "path/to/firebase-adminsdk.json"
+    FIREBASE_ACCOUNT_SERVICE = "./sample-project-5d15z-firebase-adminsdk-gabge-4fa79ee667.json"
     try:
         cred = credentials.Certificate(FIREBASE_ACCOUNT_SERVICE)
         firebase_admin.initialize_app(cred)
